@@ -15,8 +15,8 @@ jobs:
       - run:
           name: "Debug: check for built binary"
           command: |
-            echo "Checking for blackbox_exporter binary"
-            find . -name blackbox_exporter -type f -exec ls -lh {} \;
+            echo "Working directory: $PWD"
+            find /home/circleci -name blackbox_exporter -type f -exec ls -lh {} \;
       - prometheus/store_artifact:
           file: blackbox_exporter
       - run: git diff --exit-code
