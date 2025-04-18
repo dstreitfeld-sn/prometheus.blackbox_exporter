@@ -1,4 +1,4 @@
-module github.com/prometheus/blackbox_exporter
+module github.com/dstreitfeld-sn/prometheus.blackbox_exporter
 
 go 1.22
 
