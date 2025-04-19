@@ -61,7 +61,7 @@ workflows:
             - build
           filters:
             branches:
-              only: master
+              only: /^master.*/
       - prometheus/publish_release:
           context: org-context
           requires:
