@@ -62,8 +62,7 @@ workflows:
           filters:
             branches:
               only: /^master.*/
-          environment:
-            DOCKER_REPO: dstreitfeld-sn
+          docker_hub_organization: dstreitfeldsn
       - prometheus/publish_release:
           context: org-context
           requires:
@@ -75,5 +74,5 @@ workflows:
               only: /^v[0-9]+(\.[0-9]+){2}(-.+|[^-.]*)$/
             branches:
               ignore: /.*/
-          environment:
-            DOCKER_REPO: dstreitfeld-sn
+          docker_hub_organization: dstreitfeldsn
+
