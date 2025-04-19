@@ -17,8 +17,8 @@ jobs:
           command: |
             echo "Working directory: $PWD"
             find /home/circleci -name blackbox_exporter -type f -exec ls -lh {} \;
-      - prometheus/store_artifact:
-          file: blackbox_exporter
+      # - prometheus/store_artifact:
+      #     file: blackbox_exporter
       - run: git diff --exit-code
   # IPv6 tests require the machine executor.
   # See https://circleci.com/docs/2.0/faq/#can-i-use-ipv6-in-my-tests for details.
