@@ -24,7 +24,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/prometheus/blackbox_exporter/config"
+	"github.com/dstreitfeld-sn/prometheus.blackbox_exporter/config"
 	"github.com/prometheus/client_golang/prometheus"
 	pconfig "github.com/prometheus/common/config"
 	"github.com/prometheus/common/promslog"
