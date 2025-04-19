@@ -4,6 +4,7 @@ go:
 repository:
     path: github.com/dstreitfeld-sn/prometheus.blackbox_exporter
 build:
+    binary: blackbox_exporter
     ldflags: |
         -X github.com/prometheus/common/version.Version={{.Version}}
         -X github.com/prometheus/common/version.Revision={{.Revision}}
@@ -15,4 +16,3 @@ tarball:
         - blackbox.yml
         - LICENSE
         - NOTICE
-binary: blackbox_exporter
